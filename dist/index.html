@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+
+  <title>web components</title>
+  <meta name="description" content="web components">
+  <style>
+    div + div {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <blue-button text="hoge1"></blue-button>
+  </div>
+  <div>
+    <blue-button-slot>hoge2</blue-button-slot>
+  </div>
+  <div>
+    <link-blue-button href="#hoge" text="hoge3"></link-blue-button>
+  </div>
+  <div>
+    <alert-blue-button text="hoge4"></alert-blue-button>
+  </div>
+  <div>
+    <alert-or-console-blue-button text="hoge5 console" type="console"></alert-or-console-blue-button>
+  </div>
+  <div>
+    <alert-or-console-blue-button text="hoge5 alert" type="alert"></alert-or-console-blue-button>
+  </div>
+  <div>
+    <alert-or-console-blue-button text="hoge6 default"></alert-or-console-blue-button>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
